@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact McKell Woodland</title>
+    <title>McKell Woodland</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
+        a {
+            color: #5c5c5b;
+        }
         body {
             font-family: Arial, sans-serif;
         }
@@ -17,12 +20,95 @@
             border-radius: 10px;
             background-color: #f8f9fa;
         }
+        .footer {
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 20px 0;
+        }
+        .footer p {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 0;
+        }
+        .footer small {
+            font-size: 0.9em;
+            color: #666;
+        }
         .form-group label {
             font-weight: bold;
+        }
+        .header-image {
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://raw.githubusercontent.com/mckellwoodland/mckellwoodland.github.io/main/images/_aca15803-4f0a-49e6-865d-be63ab6b6ac4.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .header-image h1 {
+            font-size: 2.5em;
+            margin: 0;
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+        .header-image a {
+            color: white;
+            text-decoration: none;
+        }
+        .header-image a:hover {
+            text-decoration: underline;
+        }  
+        .navbar {
+            background-color: #f8f9fa;
+            margin-bottom: 20px;
+        }
+        .navbar a {
+            text-decoration: none;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .navbar-nav {
+            margin: 0 auto; /* Center navigation bar. */
+        }
+        .navbar-nav .nav-item .nav-link {
+            margin-right: 20px;
+            font-size: 1.1em;
+        }
+        .social-links a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    <div class="header-image">
+        <a href="index.html">
+            <h1>MCKELL WOODLAND</h1>
+        </a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Publications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Curriculum Vitae</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Community Engagement</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         <h2>Contact McKell Woodland</h2>
         <form action="https://formspree.io/f/{your_form_id}" method="POST">
@@ -41,5 +127,20 @@
             <button type="submit" class="btn btn-primary">Send</button>
         </form>
     </div>
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <p class="mb-0">MCKELL WOODLAND</p>
+            <small>Data Scientist at MD Anderson Cancer Center</small>
+            <div class="social-links mt-3">
+                <a href="https://www.linkedin.com/in/mckell-woodland/" class="mr-3">LinkedIn</a>
+                <a href="https://x.com/MckellWoodland" class="mr-3">X</a>
+                <a href="https://scholar.google.com/citations?user=nFXpkp0AAAAJ&hl=en" class="mr-3">Scholar</a>
+                <a href="https://github.com/mckellwoodland" class="mr-3">GitHub</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
